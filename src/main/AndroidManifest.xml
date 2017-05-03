@@ -20,7 +20,24 @@
         </activity>
         <activity android:name=".RegisterActivity" />
         <activity android:name=".UserAreaActivity" />
-        <activity android:name=".HomePage"></activity>
+        <activity android:name=".HomePage" />
+        <activity android:name=".BudgetActivity" />
+        <activity android:name=".budget_form_activity" />
+        <activity android:name=".GraphPage" />
+        <activity
+            android:name=".GoalActivity"
+            android:label="@string/title_activity_goal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Balance"
+            android:label="@string/title_activity_balance"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

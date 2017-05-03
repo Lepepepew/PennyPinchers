@@ -31,5 +31,38 @@ public class HomePage extends AppCompatActivity {
                 HomePage.this.startActivity(budgetIntent);
             }
         });
+        // This links to the goals page, ccreated a button
+        Button goBut;
+        goBut = (Button) findViewById(R.id.bGoals);
+
+        goBut.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goalIntent = new Intent(HomePage.this, GoalActivity.class);
+                HomePage.this.startActivity(goalIntent);
+            }
+        });
+
+        Button remainButt;
+        remainButt = (Button) findViewById(R.id.bBalance);
+
+        remainButt.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent balIntent = new Intent(HomePage.this, Balance.class);
+                HomePage.this.startActivity(balIntent);
+            }
+        });
+        //Implementing Link to Graph Page
+        Button graphBut;
+        graphBut = (Button) findViewById(R.id.bGraph);
+
+        graphBut.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent graphIntent = new Intent(HomePage.this, GraphPage.class);
+                HomePage.this.startActivity(graphIntent);
+            }
+        });
     }
 }
